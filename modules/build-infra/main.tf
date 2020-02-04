@@ -18,10 +18,10 @@ resource "google_compute_subnetwork" "subnet" {
   region      = var.region
   private_ip_google_access = true
  
-  secondary_ip_range {
-    range_name = "public-services"
-    ip_cidr_range = cidrsubnet(var.ip_cidr_range[var.environment],4,0)
-  }
+//  secondary_ip_range {
+//    range_name = "public-services"
+//    ip_cidr_range = cidrsubnet(var.ip_cidr_range[var.environment],4,0)
+//  }
 }
 
 // VPC firewall configuration
