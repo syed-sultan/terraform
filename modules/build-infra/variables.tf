@@ -29,7 +29,7 @@ variable "ip_cidr_range" {
   type = map
   default = {
     "dev" = "10.10.0.0/16"
-    "sit" = "10.11.0.0/16"
+    "sit" = "10.0.0.0/16"
     "uat" = "10.12.0.0/16"
     "prod" = "10.13.0.0/16" 
   }
